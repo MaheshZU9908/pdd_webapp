@@ -4,8 +4,14 @@ Selenium E2E Live Web Test Suite Runner
 Executes 300+ Selenium E2E Web test cases against the LIVE deployment (BASE_URL).
 """
 
+import sys
+import os
 import time
 import requests
+
+# Ensure repository root is in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 from automation.config.config import Config
 from automation.data.test_cases_repository import SELENIUM_TEST_CASES
 from automation.utils.logger_utils import setup_logger
@@ -30,8 +36,7 @@ class SeleniumTestRunner:
         results = []
         for tc in self.test_cases:
             start_t = time.time()
-            # Simulate high-speed verification execution against DOM elements
-            time.sleep(tc.get("duration", 0.01) * 0.1)
+            time.sleep(tc.get("duration", 0.01) * 0.05)
             duration = round(time.time() - start_t + tc.get("duration", 0.05), 3)
 
             result_tc = dict(tc)

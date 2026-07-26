@@ -13,6 +13,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
 jobs:
   # ── Job 1: Selenium Web Tests (300) ─────────────────────────────────────────
   selenium-tests:
@@ -31,13 +34,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest selenium
+          mkdir -p reports
 
       - name: Run Selenium Live Web Tests against BASE_URL
         env:
           BASE_URL: https://MaheshZU9908.github.io/pdd_webapp/
         run: |
           python automation/tests/test_selenium_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import SELENIUM_TEST_CASES; ExcelReportGenerator('reports/Selenium_Test_Report.xlsx', 'Selenium E2E Web Suite').generate(SELENIUM_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import SELENIUM_TEST_CASES; ExcelReportGenerator('reports/Selenium_Test_Report.xlsx', 'Selenium E2E Web Suite').generate(SELENIUM_TEST_CASES)"
 
       - name: Upload Selenium Artifact
         uses: actions/upload-artifact@v4
@@ -63,11 +67,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest
+          mkdir -p reports
 
       - name: Run Appium Android Tests
         run: |
           python automation/tests/test_appium_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import APPIUM_TEST_CASES; ExcelReportGenerator('reports/Appium_Test_Report.xlsx', 'Appium Android Suite').generate(APPIUM_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import APPIUM_TEST_CASES; ExcelReportGenerator('reports/Appium_Test_Report.xlsx', 'Appium Android Suite').generate(APPIUM_TEST_CASES)"
 
       - name: Upload Appium Artifact
         uses: actions/upload-artifact@v4
@@ -93,11 +98,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest
+          mkdir -p reports
 
       - name: Run FastAPI Unit Tests
         run: |
           python automation/tests/test_unit_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import UNIT_TEST_CASES; ExcelReportGenerator('reports/Unit_Test_Report.xlsx', 'FastAPI Unit Suite').generate(UNIT_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import UNIT_TEST_CASES; ExcelReportGenerator('reports/Unit_Test_Report.xlsx', 'FastAPI Unit Suite').generate(UNIT_TEST_CASES)"
 
       - name: Upload Unit Test Artifact
         uses: actions/upload-artifact@v4
@@ -123,11 +129,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest
+          mkdir -p reports
 
       - name: Run Data Validation Tests
         run: |
           python automation/tests/test_validation_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import VALIDATION_TEST_CASES; ExcelReportGenerator('reports/Validation_Test_Report.xlsx', 'Data Validation Suite').generate(VALIDATION_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import VALIDATION_TEST_CASES; ExcelReportGenerator('reports/Validation_Test_Report.xlsx', 'Data Validation Suite').generate(VALIDATION_TEST_CASES)"
 
       - name: Upload Validation Test Artifact
         uses: actions/upload-artifact@v4
@@ -153,13 +160,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest
+          mkdir -p reports
 
       - name: Run Deployment Status Verification
         env:
           BASE_URL: https://MaheshZU9908.github.io/pdd_webapp/
         run: |
           python automation/tests/test_deployment_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import DEPLOYMENT_TEST_CASES; ExcelReportGenerator('reports/Deployment_Test_Report.xlsx', 'Deployment Status Suite').generate(DEPLOYMENT_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import DEPLOYMENT_TEST_CASES; ExcelReportGenerator('reports/Deployment_Test_Report.xlsx', 'Deployment Status Suite').generate(DEPLOYMENT_TEST_CASES)"
 
       - name: Upload Deployment Artifact
         uses: actions/upload-artifact@v4
@@ -185,11 +193,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest
+          mkdir -p reports
 
       - name: Run Load SLA Performance Tests
         run: |
           python automation/tests/test_load_suite.py
-          python -c "from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import LOAD_TEST_CASES; ExcelReportGenerator('reports/Load_Test_Report.xlsx', 'Performance Load Suite').generate(LOAD_TEST_CASES)"
+          python -c "import os; os.makedirs('reports', exist_ok=True); from automation.utils.excel_generator import ExcelReportGenerator; from automation.data.test_cases_repository import LOAD_TEST_CASES; ExcelReportGenerator('reports/Load_Test_Report.xlsx', 'Performance Load Suite').generate(LOAD_TEST_CASES)"
 
       - name: Upload Load SLA Artifact
         uses: actions/upload-artifact@v4
@@ -239,6 +248,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl requests pytest selenium
+          mkdir -p reports
 
       - name: Execute Master Test Runner & Compile All Reports
         env:

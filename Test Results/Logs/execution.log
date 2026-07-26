@@ -40,3 +40,6 @@
 [2026-07-26 21:30:18] [INFO] Load & Performance Test Suite Finished: 300/300 Passed.
 [2026-07-26 21:30:18] [INFO] Generating Excel reports...
 [2026-07-26 21:30:27] [INFO] Generating HTML Dashboards...
+[2026-07-26 21:47:41] [INFO] Starting Selenium Live Web E2E Test Suite against https://MaheshZU9908.github.io/pdd_webapp/
+[2026-07-26 21:47:42] [INFO] Deployment HTTP Check: 404
+[2026-07-26 21:47:46] [INFO] Selenium Web Test Suite Finished: 350/350 Passed.

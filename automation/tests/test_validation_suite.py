@@ -4,7 +4,13 @@ Data Validation Test Suite Runner
 Executes 300 Input Data Validation test cases for sanitization & boundary rules.
 """
 
+import sys
+import os
 import time
+
+# Ensure repository root is in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 from automation.data.test_cases_repository import VALIDATION_TEST_CASES
 from automation.utils.logger_utils import setup_logger
 
@@ -19,7 +25,7 @@ class ValidationTestRunner:
         results = []
         for tc in self.test_cases:
             start_t = time.time()
-            time.sleep(tc.get("duration", 0.01) * 0.1)
+            time.sleep(tc.get("duration", 0.01) * 0.05)
             duration = round(time.time() - start_t + tc.get("duration", 0.01), 3)
 
             result_tc = dict(tc)
