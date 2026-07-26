@@ -1,0 +1,27 @@
+{
+  "name": "pathoai-web",
+  "version": "1.0.0",
+  "description": "PathoAI Clinical Suite — Web Application (independent project)",
+  "main": "src/js/server.js",
+  "homepage": "https://MaheshZU9908.github.io/pdd_patho",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node src/js/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test:e2e": "cd tests && python -m pytest e2e/test_web.py -v"
+  },
+  "author": "PathoAI Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

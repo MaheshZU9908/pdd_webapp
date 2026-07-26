@@ -1,8 +1,0 @@
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\PatientAdapter.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\MainActivity.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\SplashActivity.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\Patient.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\AnalysisResultActivity.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\AppState.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\CaseRecord.kt
-C:\Users\mm211\OneDrive\check it out\OneDrive\Desktop\AI-Powered\PathoAI\PathoAI_Native_Android\app\src\main\java\com\pathoai\app\LoginActivity.kt

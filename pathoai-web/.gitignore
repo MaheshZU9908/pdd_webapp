@@ -1,0 +1,28 @@
+# pathoai-web — .gitignore
+
+# Node
+node_modules/
+src/node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Environment files (never commit these)
+.env
+.env.local
+.env.production
+
+# Python / test output
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+tests/e2e/test_results.json
+reports/
+*.html
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

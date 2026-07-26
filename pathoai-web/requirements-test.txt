@@ -1,0 +1,5 @@
+# PathoAI Web — Test dependencies
+# Install with: pip install -r requirements-test.txt
+pytest
+selenium
+openpyxl

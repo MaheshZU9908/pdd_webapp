@@ -1,0 +1,16 @@
+{
+    "name": "PathoAI Analytics",
+    "short_name": "PathoAI",
+    "description": "Medical analytics dashboard for biopsy histology slides",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#F8FAFC",
+    "theme_color": "#0066FF",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

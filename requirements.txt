@@ -1,0 +1,21 @@
+# PathoAI — Root / Shared Dependencies
+#
+# This file lists the shared backend dependencies.
+# For project-specific test dependencies see:
+#   - pathoai-web/requirements-test.txt   (Selenium / pytest)
+#   - pathoai-mobile/requirements-test.txt (Appium / pytest)
+#
+# The canonical backend requirements live in backend/requirements.txt
+
+fastapi
+uvicorn[standard]
+python-dotenv
+pillow
+passlib[bcrypt]
+python-jose[cryptography]
+email-validator
+sqlalchemy
+python-multipart
+pyotp
+qrcode[pil]
+numpy

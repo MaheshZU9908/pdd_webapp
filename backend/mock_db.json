@@ -1,0 +1,1154 @@
+{
+  "users": [
+    {
+      "_id": "mock_doctor_id",
+      "email": "doctor@pathoai.com",
+      "hashed_password": "$2b$12$w8OvIL0LM9bB2HoWY/EJ4Og04Kq10mMdTVWG2UxpCF6LMNd40yqBG",
+      "full_name": "Dr. Akhil Komma",
+      "institution": "Apollo Clinical Intelligence Suite",
+      "license_id": "DOC2026-AP88",
+      "role": "doctor",
+      "is_active": true,
+      "created_at": "2026-07-26T13:58:26.144988"
+    },
+    {
+      "email": "mm2113662@gmail.com",
+      "hashed_password": "$2b$12$d.23sX8ny9sRCFNgx0EA1u9cIaI2c4jBai6XNgMOGexO8BCC9xYNG",
+      "full_name": "Mike",
+      "institution": "Apollo Hospitals Chennai",
+      "license_id": "DOC2026001",
+      "totp_secret": "XNDZI2AC4GLO6X6ISP4CTVGXJGX5TPOE",
+      "mfa_enabled": false,
+      "is_active": true,
+      "role": "doctor",
+      "created_at": "2026-07-26 14:17:31.532664",
+      "_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8"
+    }
+  ],
+  "patients": [
+    {
+      "_id": "mock_patient_1",
+      "patient_uid": "PID-1001",
+      "name": "Eleanor Vance",
+      "age": 54,
+      "gender": "Female",
+      "tissue_type": "Oral Mucosa",
+      "biopsy_site": "Lateral Tongue",
+      "status": "Analyzed",
+      "diagnosis": "Moderate Dysplasia",
+      "risk_score": 68.0,
+      "confidence": 94.2,
+      "risk_label": "High Risk",
+      "image_url": "/src/assets/pathology_slide_sample.png",
+      "notes": "Nuclear hyperchromatism and loss of basal polarity observed in basal 1/3 of epithelium.",
+      "doctor_id": "mock_doctor_id",
+      "created_at": "2026-07-26T13:58:26.145009",
+      "updated_at": "2026-07-26T13:58:26.145012"
+    },
+    {
+      "_id": "mock_patient_2",
+      "patient_uid": "PID-1002",
+      "name": "Marcus Thorne",
+      "age": 62,
+      "gender": "Male",
+      "tissue_type": "Oral Mucosa",
+      "biopsy_site": "Floor of Mouth",
+      "status": "Analyzed",
+      "diagnosis": "Severe Dysplasia (Carcinoma in Situ)",
+      "risk_score": 89.0,
+      "confidence": 98.7,
+      "risk_label": "Malignant",
+      "image_url": "/src/assets/pathology_slide_sample.png",
+      "notes": "Full-thickness epithelial atypia, pleomorphism and frequent atypical mitotic figures.",
+      "doctor_id": "mock_doctor_id",
+      "created_at": "2026-07-26T13:58:26.145016",
+      "updated_at": "2026-07-26T13:58:26.145018"
+    },
+    {
+      "_id": "mock_patient_3",
+      "patient_uid": "PID-1003",
+      "name": "Sophia Chen",
+      "age": 41,
+      "gender": "Female",
+      "tissue_type": "Oral Mucosa",
+      "biopsy_site": "Buccal Mucosa",
+      "status": "Pending",
+      "diagnosis": "Awaiting AI Pipeline",
+      "risk_score": 22.0,
+      "confidence": 0.0,
+      "risk_label": "Benign",
+      "image_url": "/src/assets/pathology_slide_sample.png",
+      "notes": "Lichenoid mucositis with basal cell vacuolization.",
+      "doctor_id": "mock_doctor_id",
+      "created_at": "2026-07-26T13:58:26.145022",
+      "updated_at": "2026-07-26T13:58:26.145025"
+    },
+    {
+      "_id": "mock_patient_4",
+      "patient_uid": "PID-1004",
+      "name": "Arthur Pendelton",
+      "age": 68,
+      "gender": "Male",
+      "tissue_type": "Oral Mucosa",
+      "biopsy_site": "Hard Palate",
+      "status": "Analyzed",
+      "diagnosis": "Mild Dysplasia",
+      "risk_score": 35.0,
+      "confidence": 89.1,
+      "risk_label": "Low Risk",
+      "image_url": "/src/assets/pathology_slide_sample.png",
+      "notes": "Hyperkeratosis with mild basal cell hyperplasia.",
+      "doctor_id": "mock_doctor_id",
+      "created_at": "2026-07-26T13:58:26.145035",
+      "updated_at": "2026-07-26T13:58:26.145038"
+    },
+    {
+      "patient_uid": "PID-276615",
+      "name": "Ganesh",
+      "age": 21,
+      "gender": "Male",
+      "tissue_type": null,
+      "biopsy_site": "lower down the mouth located in jaw",
+      "notes": "drinker and helthy person",
+      "diagnosis": null,
+      "risk_score": null,
+      "confidence": null,
+      "risk_label": "Pending",
+      "status": "Pending",
+      "image_url": null,
+      "doctor_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "created_at": "2026-07-26 14:19:05.859863",
+      "updated_at": "2026-07-26 14:19:05.859877",
+      "_id": "7472eec6-9514-49f1-bab5-9952594e38b0"
+    },
+    {
+      "patient_uid": "PID-044084",
+      "name": "akki",
+      "age": 21,
+      "gender": "Male",
+      "tissue_type": null,
+      "biopsy_site": "inflamation in jaw",
+      "notes": "drinker...",
+      "diagnosis": null,
+      "risk_score": null,
+      "confidence": null,
+      "risk_label": "Pending",
+      "status": "Pending",
+      "image_url": null,
+      "doctor_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "created_at": "2026-07-26 14:51:58.871672",
+      "updated_at": "2026-07-26 14:51:58.871678",
+      "_id": "2ed99483-cee3-4818-95ad-f3b1ee614d9a"
+    }
+  ],
+  "system_settings": [
+    {
+      "key": "app_name",
+      "value": "PathoAI Clinical Suite",
+      "updated_at": "2026-07-26T13:58:26.145042"
+    },
+    {
+      "key": "ai_model_version",
+      "value": "v2.4-resnet50-oralpath",
+      "updated_at": "2026-07-26T13:58:26.145046"
+    },
+    {
+      "key": "confidence_threshold",
+      "value": "85.0",
+      "updated_at": "2026-07-26T13:58:26.145050"
+    }
+  ],
+  "dashboard_statistics": [
+    {
+      "stat_type": "summary",
+      "total_patients": 6,
+      "analyzed_patients": 3,
+      "high_risk_patients": 2,
+      "pending_patients": 3,
+      "updated_at": "2026-07-26 15:30:03.916129",
+      "_id": "d64c8990-156a-4b5f-8c33-53cbb8c76da4"
+    }
+  ],
+  "activity_logs": [
+    {
+      "log_id": "LOG-852d648b",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:15:38.510252",
+      "_id": "f6ee79c0-7c7f-4424-ba78-91a10520fa08"
+    },
+    {
+      "log_id": "LOG-d739ce73",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "User Registered Credentials",
+      "details": "Registered doctor profile for mm2113662@gmail.com",
+      "timestamp": "2026-07-26 14:17:31.537901",
+      "_id": "6447dfc8-97c1-435b-badd-1fc214ca2d05"
+    },
+    {
+      "log_id": "LOG-de5c8aa8",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "User Logged In",
+      "details": "Authenticated session for mm2113662@gmail.com",
+      "timestamp": "2026-07-26 14:17:55.415244",
+      "_id": "dfee1824-c3b8-4cda-a02d-40f551899ab3"
+    },
+    {
+      "log_id": "LOG-13cf6e89",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Patient Biopsy Record Registered",
+      "details": "Created patient case Ganesh (PID-276615)",
+      "timestamp": "2026-07-26 14:19:05.898143",
+      "_id": "d80164c8-428a-47ea-89bc-53020daae782"
+    },
+    {
+      "log_id": "LOG-ca62cdd2",
+      "action": "User Logged Out",
+      "details": "Terminated user session",
+      "timestamp": "2026-07-26 14:23:43.611497",
+      "_id": "234173de-0551-4cfa-9090-f98f417eefe9"
+    },
+    {
+      "log_id": "LOG-4d290962",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "User Logged In",
+      "details": "Authenticated session for mm2113662@gmail.com",
+      "timestamp": "2026-07-26 14:23:57.296953",
+      "_id": "9d1ea023-3195-42b3-8548-026a43c14eaa"
+    },
+    {
+      "log_id": "LOG-b3061e5e",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed download.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 14:24:34.775947",
+      "_id": "21331062-e252-493e-85e7-06d89683df45"
+    },
+    {
+      "log_id": "LOG-d6e4ef37",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:41:59.831028",
+      "_id": "5d8aedbe-18b7-4722-a97d-56ff9ce2fbfb"
+    },
+    {
+      "log_id": "LOG-d799487f",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:42:39.656744",
+      "_id": "4559961d-0b06-45a5-a487-1e35b035a5b3"
+    },
+    {
+      "log_id": "LOG-8f50d20b",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:43:19.873947",
+      "_id": "887ae71b-92b7-428d-abef-156e35889969"
+    },
+    {
+      "log_id": "LOG-e2abb658",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed download.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 14:44:42.556576",
+      "_id": "5f4395ea-6206-4054-9dcf-4bcd7a2ec78d"
+    },
+    {
+      "log_id": "LOG-07c565a6",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed download.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 14:45:21.665960",
+      "_id": "7de4b964-7924-4ede-a6d6-3004f1dfabed"
+    },
+    {
+      "log_id": "LOG-2d78ca8a",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:48:42.994460",
+      "_id": "bc5a2332-cfad-4a3b-a4cf-3a28ffde4ad8"
+    },
+    {
+      "log_id": "LOG-640878b1",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 14:50:06.561024",
+      "_id": "825aa701-828c-48a4-a1f1-88daf447f2c1"
+    },
+    {
+      "log_id": "LOG-d0bfbf93",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Patient Biopsy Record Registered",
+      "details": "Created patient case akki (PID-044084)",
+      "timestamp": "2026-07-26 14:51:58.905590",
+      "_id": "6cc2f58a-ff3d-4d2b-a236-04f3abf362f5"
+    },
+    {
+      "log_id": "LOG-c173fb7b",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "User Logged In",
+      "details": "Authenticated session for mm2113662@gmail.com",
+      "timestamp": "2026-07-26 14:56:24.061403",
+      "_id": "1ce9afeb-5b1e-47f6-bf00-7a4a5b8bc868"
+    },
+    {
+      "log_id": "LOG-a2d7988b",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 14:56:45.828832",
+      "_id": "1a931853-cb2e-4947-a78f-6fb42585aa99"
+    },
+    {
+      "log_id": "LOG-53650937",
+      "user_id": "mock_doctor_id",
+      "action": "User Logged In",
+      "details": "Authenticated session for doctor@pathoai.com",
+      "timestamp": "2026-07-26 14:59:15.516946",
+      "_id": "387bb509-ae15-4f1b-8c81-0b7a90faa6ed"
+    },
+    {
+      "log_id": "LOG-6a420a2e",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:00:13.657638",
+      "_id": "cf49ffa1-d526-4ed4-abf6-989f924da806"
+    },
+    {
+      "log_id": "LOG-a78ae7a1",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:00:43.852828",
+      "_id": "da559b66-3558-437d-8cb5-918f8ff894d3"
+    },
+    {
+      "log_id": "LOG-c78fb78b",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:01:22.185740",
+      "_id": "c3585f30-b723-4baf-a4b2-a204575fa287"
+    },
+    {
+      "log_id": "LOG-76e0c82d",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:08:20.589759",
+      "_id": "095d2492-46e0-4c02-ae65-85349622ca32"
+    },
+    {
+      "log_id": "LOG-bf85f229",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:09:34.738858",
+      "_id": "4850f599-1dea-43a2-9d98-41fc8290044b"
+    },
+    {
+      "log_id": "LOG-21d35670",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "User Logged In",
+      "details": "Authenticated session for mm2113662@gmail.com",
+      "timestamp": "2026-07-26 15:29:31.082725",
+      "_id": "c5de38bd-c5f1-4345-87eb-25a93be94ef3"
+    },
+    {
+      "log_id": "LOG-ad99e97f",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "action": "Deep MIL Slide Analysis Executed",
+      "details": "Analyzed oralcavitylichenplanusMintline07.jpg \u2192 Result: Moderate Dysplasia (72.0% Risk)",
+      "timestamp": "2026-07-26 15:30:03.925821",
+      "_id": "03d82041-a98e-4d76-a86c-cb086dd12402"
+    }
+  ],
+  "doctor_profiles": [
+    {
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "email": "mm2113662@gmail.com",
+      "full_name": "Mike",
+      "institution": "Apollo Hospitals Chennai",
+      "license_id": "DOC2026001",
+      "updated_at": "2026-07-26 14:17:31.535892",
+      "_id": "b41c1764-0755-4a92-b070-b8681dc2a018"
+    }
+  ],
+  "patient_medical_records": [
+    {
+      "record_id": "REC-de6e8c75",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "patient_uid": "PID-276615",
+      "biopsy_site": "lower down the mouth located in jaw",
+      "tissue_type": "Oral Mucosa",
+      "notes": "drinker and helthy person",
+      "diagnosis": "Pending Analysis",
+      "doctor_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "created_at": "2026-07-26 14:19:05.874096",
+      "_id": "6a66a03f-653b-408b-ba9c-5cb4e5b594b1"
+    },
+    {
+      "record_id": "REC-060dd843",
+      "patient_id": "2ed99483-cee3-4818-95ad-f3b1ee614d9a",
+      "patient_uid": "PID-044084",
+      "biopsy_site": "inflamation in jaw",
+      "tissue_type": "Oral Mucosa",
+      "notes": "drinker...",
+      "diagnosis": "Pending Analysis",
+      "doctor_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "created_at": "2026-07-26 14:51:58.882420",
+      "_id": "d3371774-8f5d-4ab5-a9d7-39ef16612a44"
+    }
+  ],
+  "diagnostic_reports": [
+    {
+      "report_uid": "REP-a4563a23",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "patient_uid": "PID-276615",
+      "patient_name": "Ganesh",
+      "diagnosis": "Pending Analysis",
+      "risk_score": 0.0,
+      "confidence": 0.0,
+      "detailed_findings": "drinker and helthy person",
+      "status": "Draft",
+      "created_at": "2026-07-26 14:19:05.885026",
+      "created_by": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "_id": "8b10ea5e-166f-4863-bbbb-04a28223eac9"
+    },
+    {
+      "report_uid": "REP-08111091",
+      "patient_id": "2ed99483-cee3-4818-95ad-f3b1ee614d9a",
+      "patient_uid": "PID-044084",
+      "patient_name": "akki",
+      "diagnosis": "Pending Analysis",
+      "risk_score": 0.0,
+      "confidence": 0.0,
+      "detailed_findings": "drinker...",
+      "status": "Draft",
+      "created_at": "2026-07-26 14:51:58.895187",
+      "created_by": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "_id": "d08ea630-9ea0-45fd-881f-ed3f606a8884"
+    }
+  ],
+  "uploaded_pathology_images": [
+    {
+      "image_id": "IMG-60f9f846",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "file_url": "/uploads/download.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 14:24:34.729749",
+      "_id": "a607fb9f-e51b-4623-99e7-1d3e652ff43d"
+    },
+    {
+      "image_id": "IMG-96bd4504",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "file_url": "/uploads/download.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 14:44:42.521868",
+      "_id": "55e9a464-cf5d-4966-b249-95515e3f84a1"
+    },
+    {
+      "image_id": "IMG-84f5958f",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "file_url": "/uploads/download.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 14:45:21.631508",
+      "_id": "2dbfdd8f-7576-4c29-be7a-dfec98be1d28"
+    },
+    {
+      "image_id": "IMG-8d17060a",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 14:50:06.527912",
+      "_id": "86fd96c7-491d-4c5e-b23c-3ffccd15237c"
+    },
+    {
+      "image_id": "IMG-9f73f418",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 14:56:45.792400",
+      "_id": "de581da7-9406-4f7d-84b2-9edfd96d2a30"
+    },
+    {
+      "image_id": "IMG-e2e08c39",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:00:13.620472",
+      "_id": "e9f318d0-66c2-4719-be63-2e2c10125657"
+    },
+    {
+      "image_id": "IMG-d589c3a4",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:00:43.813975",
+      "_id": "4e4d2255-128f-4192-9e4e-af80bf4a7fc8"
+    },
+    {
+      "image_id": "IMG-7194f214",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:01:22.137440",
+      "_id": "eb2d8b2d-382d-4ff2-a787-b51b13d49bdd"
+    },
+    {
+      "image_id": "IMG-9ecb8299",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:08:20.558555",
+      "_id": "4bd68548-65b1-4abc-b655-e871a002c7b0"
+    },
+    {
+      "image_id": "IMG-9fe175bf",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:09:34.718913",
+      "_id": "08f27faf-7bf9-4058-828b-1b647da32e44"
+    },
+    {
+      "image_id": "IMG-09b2ecd9",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "filename": "oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "size_bytes": 677196,
+      "content_type": "image/jpeg",
+      "uploaded_at": "2026-07-26 15:30:03.887192",
+      "_id": "4f1c1c5d-2a8d-4e8b-b3cc-4c35661ee24d"
+    }
+  ],
+  "ai_prediction_results": [
+    {
+      "prediction_id": "PRED-9b2999d5",
+      "image_id": "IMG-60f9f846",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 14:24:34.740417",
+      "_id": "e4f2dc59-6457-413d-aa79-e96e76a76a01"
+    },
+    {
+      "prediction_id": "PRED-c2362638",
+      "image_id": "IMG-96bd4504",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 14:44:42.527526",
+      "_id": "2332fb47-72b8-42bc-a352-d14b2664b41c"
+    },
+    {
+      "prediction_id": "PRED-c3fbfca8",
+      "image_id": "IMG-84f5958f",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 14:45:21.636855",
+      "_id": "7dc00bf0-7511-4809-91d1-61b1c2abd662"
+    },
+    {
+      "prediction_id": "PRED-018ac49b",
+      "image_id": "IMG-8d17060a",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 14:50:06.533699",
+      "_id": "1be72a35-46fe-4b54-bee7-c79d0692bb68"
+    },
+    {
+      "prediction_id": "PRED-62b79602",
+      "image_id": "IMG-9f73f418",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 14:56:45.799134",
+      "_id": "d47ce4fe-0657-4dd5-98ba-04b0ecf9ddad"
+    },
+    {
+      "prediction_id": "PRED-94aa21e7",
+      "image_id": "IMG-e2e08c39",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:00:13.628244",
+      "_id": "0951649d-8abe-4fa1-a929-c7c21a42c01f"
+    },
+    {
+      "prediction_id": "PRED-11ee7476",
+      "image_id": "IMG-d589c3a4",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:00:43.822026",
+      "_id": "563535a4-f91f-4194-a3b4-9d406fcb54ac"
+    },
+    {
+      "prediction_id": "PRED-28eb6478",
+      "image_id": "IMG-7194f214",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:01:22.145842",
+      "_id": "92bad2be-d56b-46e5-956f-e79855ddd5ab"
+    },
+    {
+      "prediction_id": "PRED-89eb7e4c",
+      "image_id": "IMG-9ecb8299",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:08:20.565214",
+      "_id": "3f42b33a-a1b1-4d98-8153-5ae8d66462b1"
+    },
+    {
+      "prediction_id": "PRED-27733731",
+      "image_id": "IMG-9fe175bf",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:09:34.723464",
+      "_id": "725c56f1-f30b-415b-82e3-6b686960c116"
+    },
+    {
+      "prediction_id": "PRED-6ef158a5",
+      "image_id": "IMG-09b2ecd9",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "label": "Moderate Dysplasia",
+      "prediction": "Moderate Dysplasia",
+      "confidence": 95.8,
+      "risk_score": 72.0,
+      "description": "Architectural disturbance extending to middle third with focal nuclear hyperchromatism.",
+      "tiles_processed": 256,
+      "timestamp": "2026-07-26 15:30:03.890938",
+      "_id": "838d7145-c790-45cd-9f09-de30543fb0b6"
+    }
+  ],
+  "analysis_images": [
+    {
+      "analysis_id": "ANL-58f4bc51",
+      "prediction_id": "PRED-9b2999d5",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 14:24:34.751063",
+      "_id": "b29263cc-b395-416a-83cd-2c8cca7bfeb0"
+    },
+    {
+      "analysis_id": "ANL-be27eb61",
+      "prediction_id": "PRED-c2362638",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 14:44:42.537157",
+      "_id": "5384622c-707b-48a2-b39f-cac07a758def"
+    },
+    {
+      "analysis_id": "ANL-2f832b67",
+      "prediction_id": "PRED-c3fbfca8",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/download.jpg",
+      "file_path": "/uploads/download.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 14:45:21.647223",
+      "_id": "8b544ac7-c808-4343-8136-cca7816f6871"
+    },
+    {
+      "analysis_id": "ANL-bb2a6735",
+      "prediction_id": "PRED-018ac49b",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 14:50:06.541571",
+      "_id": "5b5b1da7-82f3-4825-9634-e932ee3f1beb"
+    },
+    {
+      "analysis_id": "ANL-adb4d1ca",
+      "prediction_id": "PRED-62b79602",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 14:56:45.807986",
+      "_id": "3a1bbc0a-787b-4e8d-ac90-b2f6ab35d107"
+    },
+    {
+      "analysis_id": "ANL-6a796276",
+      "prediction_id": "PRED-94aa21e7",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:00:13.636306",
+      "_id": "df71394e-61bb-47ea-a637-ca26a78e932e"
+    },
+    {
+      "analysis_id": "ANL-06f190d1",
+      "prediction_id": "PRED-11ee7476",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:00:43.830238",
+      "_id": "d06da810-4e07-4a81-bce4-1f5e3e76a018"
+    },
+    {
+      "analysis_id": "ANL-9194d3ef",
+      "prediction_id": "PRED-28eb6478",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:01:22.157719",
+      "_id": "844baa4b-8470-487c-a157-b5d33095f065"
+    },
+    {
+      "analysis_id": "ANL-35470d10",
+      "prediction_id": "PRED-89eb7e4c",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:08:20.571597",
+      "_id": "159a0ddc-1c9f-4fec-b41b-b210b71818a9"
+    },
+    {
+      "analysis_id": "ANL-a615524e",
+      "prediction_id": "PRED-27733731",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:09:34.728495",
+      "_id": "d1b29449-e73b-4b5e-a193-9167c138596d"
+    },
+    {
+      "analysis_id": "ANL-b34b24de",
+      "prediction_id": "PRED-6ef158a5",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "heatmap_url": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "file_path": "/uploads/oralcavitylichenplanusMintline07.jpg",
+      "roi_boxes": [
+        {
+          "x": 120,
+          "y": 80,
+          "w": 200,
+          "h": 180,
+          "label": "Moderate Dysplasia"
+        }
+      ],
+      "created_at": "2026-07-26 15:30:03.901045",
+      "_id": "0dc28879-ef09-4547-86ec-e48ca28a2859"
+    }
+  ],
+  "prediction_history": [
+    {
+      "history_id": "HIST-0f2ad234",
+      "prediction_id": "PRED-9b2999d5",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 14:24:34.758419",
+      "_id": "5b6f1f64-8478-4424-88c0-22ebed03c675"
+    },
+    {
+      "history_id": "HIST-44aec311",
+      "prediction_id": "PRED-c2362638",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 14:44:42.545691",
+      "_id": "dfa47753-c82f-4265-b1e5-f08e9dcc3ee3"
+    },
+    {
+      "history_id": "HIST-42da859e",
+      "prediction_id": "PRED-c3fbfca8",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 14:45:21.652564",
+      "_id": "e74abd76-cc4d-4d69-a818-b494cb1a98c4"
+    },
+    {
+      "history_id": "HIST-8fee0317",
+      "prediction_id": "PRED-018ac49b",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 14:50:06.548484",
+      "_id": "cb12eef0-2701-4f9c-b344-93013357bcce"
+    },
+    {
+      "history_id": "HIST-4575b60c",
+      "prediction_id": "PRED-62b79602",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 14:56:45.814713",
+      "_id": "e3723456-61f6-4110-ac37-2821ccd04170"
+    },
+    {
+      "history_id": "HIST-8fc56924",
+      "prediction_id": "PRED-94aa21e7",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:00:13.643509",
+      "_id": "6890743c-cd68-4490-9d01-0cfc08eb76ad"
+    },
+    {
+      "history_id": "HIST-1e63091e",
+      "prediction_id": "PRED-11ee7476",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:00:43.837716",
+      "_id": "f2b4da68-21bf-4960-9d29-4f8e0eeddd35"
+    },
+    {
+      "history_id": "HIST-99ac8d24",
+      "prediction_id": "PRED-28eb6478",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:01:22.166091",
+      "_id": "5c287e2d-5cbf-46ca-89cd-be0f8c2186a4"
+    },
+    {
+      "history_id": "HIST-e407df77",
+      "prediction_id": "PRED-89eb7e4c",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:08:20.577430",
+      "_id": "4e74c59c-2d3c-4951-9fb0-3a33e2425c16"
+    },
+    {
+      "history_id": "HIST-f18bf0bd",
+      "prediction_id": "PRED-27733731",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:09:34.733904",
+      "_id": "f9bf3293-a9eb-48a1-9ea7-b90a84d7f6c9"
+    },
+    {
+      "history_id": "HIST-e58bdaeb",
+      "prediction_id": "PRED-6ef158a5",
+      "patient_id": "7472eec6-9514-49f1-bab5-9952594e38b0",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "risk_score": 72.0,
+      "confidence": 95.8,
+      "label": "Moderate Dysplasia",
+      "timestamp": "2026-07-26 15:30:03.910624",
+      "_id": "935b723a-96bc-4ec5-b228-b3924d08797a"
+    }
+  ],
+  "notifications": [
+    {
+      "notification_id": "NOTIF-a6d1f18c",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for download.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 14:24:34.785560",
+      "_id": "7bf082e8-33bf-4944-ae1c-56306e7fc471"
+    },
+    {
+      "notification_id": "NOTIF-98b8869d",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for download.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 14:44:42.566222",
+      "_id": "335e7950-719d-47e3-b544-14f917fd4a39"
+    },
+    {
+      "notification_id": "NOTIF-5267b5ca",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for download.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 14:45:21.673747",
+      "_id": "330f1776-4ea4-4877-8dd9-7a23918ba026"
+    },
+    {
+      "notification_id": "NOTIF-b0b8b571",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 14:50:06.567725",
+      "_id": "eb718611-7106-4ed3-830a-929c9adf5ca0"
+    },
+    {
+      "notification_id": "NOTIF-3b82c810",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 14:56:45.837138",
+      "_id": "a24564cd-1b3c-4b0c-83fd-43fbf5d3b056"
+    },
+    {
+      "notification_id": "NOTIF-74274b12",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:00:13.664508",
+      "_id": "b2b85965-aca5-429d-8197-ba023c7b0be5"
+    },
+    {
+      "notification_id": "NOTIF-15cfcf90",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:00:43.859519",
+      "_id": "2a3ed26f-007f-4e55-b5e9-3dd857238118"
+    },
+    {
+      "notification_id": "NOTIF-72a2b4f7",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:01:22.197107",
+      "_id": "6e5d83cd-744f-4d42-9d94-1d1ae637050b"
+    },
+    {
+      "notification_id": "NOTIF-0318ec67",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:08:20.594741",
+      "_id": "90398cc9-dd38-4895-a47f-7856896c22fd"
+    },
+    {
+      "notification_id": "NOTIF-b510083f",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:09:34.741202",
+      "_id": "409c360a-f614-492f-9292-067df9b9b130"
+    },
+    {
+      "notification_id": "NOTIF-6ad25c26",
+      "user_id": "71768a67-7631-49dd-83f2-a39aee0dc6e8",
+      "message": "Slide analysis complete for oralcavitylichenplanusMintline07.jpg: Moderate Dysplasia",
+      "type": "info",
+      "read": false,
+      "timestamp": "2026-07-26 15:30:03.933940",
+      "_id": "5d055fad-e170-43b7-b72a-3841cbec99b9"
+    }
+  ]
+}

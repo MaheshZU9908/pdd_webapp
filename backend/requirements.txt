@@ -1,0 +1,18 @@
+# PathoAI Backend — API dependencies only
+# Testing and frontend/mobile tooling are in their respective projects.
+
+fastapi
+uvicorn[standard]
+python-dotenv
+pillow
+passlib[bcrypt]
+python-jose[cryptography]
+email-validator
+sqlalchemy
+python-multipart
+pyotp
+qrcode[pil]
+numpy
+pymongo
+dnspython
+motor
