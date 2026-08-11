@@ -36,7 +36,7 @@ jobs:
           cache-dependency-path: pathoai-web/package-lock.json
 
       - name: Install dependencies
-        run: cd pathoai-web && npm ci
+        run: cd pathoai-web && npm install --legacy-peer-deps
 
       - name: Build with Vite
         run: cd pathoai-web && npm run build
