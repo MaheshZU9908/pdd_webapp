@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "PathoAI Clinical Suite — Web Application (independent project)",
   "main": "src/js/server.js",
-  "homepage": "https://MaheshZU9908.github.io/pdd_patho",
+  "homepage": "https://MaheshZU9908.github.io/pdd_webapp",
   "type": "module",
   "scripts": {
     "dev": "vite",

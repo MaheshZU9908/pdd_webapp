@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: './',
+  base: '/pdd_webapp/',
   root: './',
   publicDir: 'public',
   server: {
